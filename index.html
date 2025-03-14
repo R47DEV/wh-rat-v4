@@ -1,113 +1,213 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WH Raj V4 - Coming Soon</title>
+    <title>wh-rat-v4 Comming Soon</title>
     <style>
-        * {
+        body {
+            background: linear-gradient(145deg, #222, #111);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
-            color: #ffffff;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            width: 90%;
+            //max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between; /* Changed to space-between */
+            flex-wrap: wrap;
         }
 
-        .product-name {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(45deg, #00ff88, #00b4d8);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 3s infinite;
+        .features-section {
+            width: 45%;
+            background-color: #1a1a1a;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        @keyframes shine {
-            0% { background-position: -500%; }
-            100% { background-position: 500%; }
+        .features-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
-        .description {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #cccccc;
+        .features-section h2 {
+            color: #64b5f6;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+
+        .feature-box {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .feature-box:hover {
+            background-color: #2a2a2a;
+        }
+
+        .feature-box h3 {
+            color: #81d4fa;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .feature-box ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            padding: 0;
+        }
+
+        .feature-box li {
+            margin-bottom: 8px;
             line-height: 1.6;
         }
 
-        .notify-box {
-            margin-top: 2rem;
-        }
-
-        input[type="email"] {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 25px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            width: 300px;
-            margin-right: 10px;
-            backdrop-filter: blur(5px);
-        }
-
-        button {
-            padding: 12px 30px;
-            border: none;
-            border-radius: 25px;
-            background: linear-gradient(45deg, #00ff88, #00b4d8);
-            color: #1a1a1a;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        button:hover {
-            transform: scale(1.05);
-        }
-
         @media (max-width: 768px) {
-            .product-name {
-                font-size: 2.5rem;
-            }
-            
-            input[type="email"] {
+            .features-section {
                 width: 100%;
-                margin-bottom: 15px;
             }
-            
-            button {
-                width: 100%;
+
+            .container {
+                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="product-name">WH Raj V4</h1>
-        <p class="description">The next evolution in smart technology is coming soon</p>
+        <div class="features-section">
+            <h2>[+] Android Capabilities</h2>
+            <div class="feature-list">
+                <div class="feature-box">
+                    <h3>Device Management</h3>
+                    <ul>
+                        <li>File System: Read/Write/Transfer</li>
+                        <li>SMS/MMS: Read/Send/Intercept</li>
+                        <li>Call Logs & Contacts: Access & Backup</li>
+                        <li>Account Access & Management</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Real-Time Monitoring</h3>
+                    <ul>
+                        <li>Live Screen: Control & Observation</li>
+                        <li>Camera & Microphone: Remote Streaming</li>
+                        <li>Keylogger: Live & Offline Data Capture</li>
+                        <li>GPS Location Tracking</li>
+                        <li>Notification Interception</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Administrative Control</h3>
+                    <ul>
+                        <li>Device Administrator Privilege Escalation</li>
+                        <li>Remote Lock & Data Wipe</li>
+                        <li>Comprehensive Device Information Retrieval</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Advanced Features</h3>
+                    <ul>
+                        <li>Arbitrary Call Initiation & APK Deployment</li>
+                        <li>Custom Message Display & Clipboard Manipulation</li>
+                        <li>Shell Command Execution</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Client Management</h3>
+                    <ul>
+                        <li>Connection Restart & Configuration</li>
+                        <li>Anti-Uninstall Protection Management</li>
+                        <li>Remote Self-Destruct</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Advanced Build Options</h3>
+                    <ul>
+                        <li>APK Injection & Payload Embedding</li>
+                        <li>Encryption & Obfuscation Techniques</li>
+                        <li>Customizable APK Generation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <div class="notify-box">
-            <p class="description">Get notified when we launch</p>
-            <form>
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit">Notify Me</button>
-            </form>
+        <div class="features-section">
+            <h2>[+] Windows Capabilities</h2>
+            <div class="feature-list">
+                <div class="feature-box">
+                    <h3>Interactive Functionality</h3>
+                    <ul>
+                        <li>Remote Chat Interface</li>
+                        <li>System Crash Simulation (BSOD)</li>
+                        <li>Custom Message Dialogs</li>
+                        <li>Hardware Control (Monitor, CD Tray)</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Covert Surveillance</h3>
+                    <ul>
+                        <li>Hidden Virtual Network Computing (HVNC)</li>
+                        <li>Webcam & Microphone Live Feeds</li>
+                        <li>Real-Time & Offline Keylogging</li>
+                        <li>Remote Desktop Control</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>System Level Access</h3>
+                    <ul>
+                        <li>Reverse Proxy (SOCKS5 Tunneling)</li>
+                        <li>Process & File Management</li>
+                        <li>Registry Editing & Shell Execution</li>
+                        <li>Credential & Data Theft</li>
+                        <li>Startup Persistence & Clipboard Manipulation</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>UAC Circumvention</h3>
+                    <ul>
+                        <li>Cmstp & Disk Cleanup Bypass</li>
+                        <li>Fodhelper Exploit</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Privilege Management</h3>
+                    <ul>
+                        <li>Administrator Privilege Request</li>
+                        <li>User Privilege Downgrade</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Client Management</h3>
+                    <ul>
+                        <li>Remote Client Termination & Restart</li>
+                        <li>Remote Uninstallation</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>System Control</h3>
+                    <ul>
+                        <li>Remote Shutdown & Restart</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>

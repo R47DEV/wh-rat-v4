@@ -80,7 +80,7 @@ The tool is designed with a comprehensive set of features, categorized for clari
 * Process & File Management (File Encrypt, File Decrypt, Upload, Download, etc.)
 * Registry Editing & Shell Execution
 * Credential & Data Theft
-    * Stealer Crypto: [List of Crypto Currencies]
+    * Stealer Crypto: [Btc , Eth , Trc20 , Xrp , Bnb , Sol ,Usdc , Trx]
     * Stealer App Sessions: FileZilla, Discord, Telegram
 * Startup Persistence & Clipboard Manipulation
 
